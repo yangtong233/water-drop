@@ -1,0 +1,79 @@
+/* 一些全局变量 */
+:root {
+    --app-backgroud-color: #FFF;
+    /*  字体相关属性值  */
+    --text-color: #606266;
+
+    /*  按钮相关属性值  */
+    /*primary主体*/
+    --primary-btn-background-color: #409eff;
+    --primary-btn-background-color-hover: #79bbff;
+    --primary-btn-background-color-active: #337ecc;
+    --primary-btn-font-size: 15px;
+    --primary-btn-font-weight: 500;
+    --primary-btn-letter-spacing: 0;
+    --primary-btn-color: #FFF;
+    --primary-btn-color-hover: #FFF;
+    --primary-btn-color-active: #FFF;
+    --primary-btn-border-color: #409eff;
+    --primary-btn-border-color-hover: #79bbff;
+    --primary-btn-border-color-active: #337ecc;
+
+    /*danger主体*/
+    --danger-btn-background-color: #f56c6c;
+    --danger-btn-background-color-hover: #f89898;
+    --danger-btn-background-color-active: #c45656;
+    --danger-btn-font-size: 15px;
+    --danger-btn-font-weight: 500;
+    --danger-btn-letter-spacing: 0;
+    --danger-btn-color: #FFF;
+    --danger-btn-color-hover: #FFF;
+    --danger-btn-color-active: #FFF;
+    --danger-btn-border-color: #f56c6c;
+    --danger-btn-border-color-hover: #f89898;
+    --danger-btn-border-color-active: #c45656;
+
+    /*normal主体*/
+    --normal-btn-background-color: #ffffff;
+    --normal-btn-background-color-hover: #ecf5ff;
+    --normal-btn-background-color-active: #ecf5ff;
+    --normal-btn-font-size: 15px;
+    --normal-btn-font-weight: 500;
+    --normal-btn-letter-spacing: 0;
+    --normal-btn-color: #606266;
+    --normal-btn-color-hover: #409eff;
+    --normal-btn-color-active: #409eff;
+    --normal-btn-border-color: #dcdfe6;
+    --normal-btn-border-color-hover: #c6e2ff;
+    --normal-btn-border-color-active: #409eff;
+
+    /*green主体*/
+    --green-btn-background-color: #67c23a;
+    --green-btn-background-color-hover: #95d475;
+    --green-btn-background-color-active: #529b2e;
+    --green-btn-font-size: 15px;
+    --green-btn-font-weight: 500;
+    --green-btn-letter-spacing: 0;
+    --green-btn-color: #FFF;
+    --green-btn-color-hover: #FFF;
+    --green-btn-color-active: #FFF;
+    --green-btn-border-color: #67c23a;
+    --green-btn-border-color-hover: #95d475;
+    --green-btn-border-color-active: #529b2e;
+}
+
+/* icon图标样式 */
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.el-input__suffix:not(.el-select .el-input__suffix) {
+    margin-left: -22px;
+}
+.el-input__inner:not(.el-select .el-input__inner) {
+    padding-right: 22px;
+}

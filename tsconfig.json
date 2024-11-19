@@ -1,0 +1,78 @@
+{
+  //基础指定的配置文件
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  //包含文件编译的匹配模式
+  "include": [
+    "vite.config.ts",
+    "env.d.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue"
+  ],
+  //排除文件编译的匹配模式
+  "exclude": [
+    "src/**/__tests__/*",
+    "node_modules",
+    "dist",
+    "**/*.js"
+  ],
+  //对ts的行为进行详细配置
+  "compilerOptions": {
+    //启用所用严格的类型检查
+    "strict": true,
+    //将代码编译为最新版本的 JS
+    "target": "ESNext",
+    //设置模块的编译方式，为ES6
+    "module": "ESNext",
+    //使用 Node 的模块解析策略
+    "moduleResolution": "Node",
+    "forceConsistentCasingInFileNames": true,
+    //使用 Object.defineProperty 定义 class 中的属性，而非使用 obj.key = value 的形式定义属性
+    "useDefineForClassFields": true,
+    //禁止未使用的局部变量
+    "noUnusedLocals": true,
+    //是否启用实验性的装饰语法
+    "experimentalDecorators": true,
+    //保留原始的 JSX 代码，不进行编译
+    "jsx": "preserve",
+    //生成 sourceMap 文件
+    "sourceMap": true,
+    //允许引入 JSON 文件
+    "resolveJsonModule": true,
+    //该属性要求所有文件都是 ES Module 模块。
+    "isolatedModules": true,
+    //启用ES模块与非ES模块的转换
+    "esModuleInterop": true,
+    //允许从没有默认导(export default)出的文件中导入模块
+    "allowSyntheticDefaultImports": true,
+    //是否允许隐式的any类型
+    "noImplicitAny": false,
+    //是否移除代码中的注释
+    "removeComments": true,
+    //引入 ES 最新特性和 DOM 接口的类型定义
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
+    //包含的额外类型声明文件
+    "types": [
+      "vite/client"
+    ],
+    //跳过对 .d.ts 文件的类型检查
+    "skipLibCheck": true,
+    //生成相应的.d.ts文件
+    "declaration": true,
+    //如果改项目是被引用的json文件，必须设置该属性
+    "composite": true,
+    //指定ts构建生成的依赖文件存储路径
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.tsbuildinfo",
+    /* 项目的根目录，相对path路径 */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  }
+}
