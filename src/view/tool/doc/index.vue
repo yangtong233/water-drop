@@ -19,12 +19,13 @@ let isShow = ref(true)
 //   dom = swaggerIframe
 //   isShow.value = false
 // })
+window.open(url)
 
 </script>
 
 <template>
-  <iframe :src="url" v-show="isShow" ref="swaggerIframe">
-  </iframe>
+<!--  <iframe :src="url" v-show="isShow" ref="swaggerIframe">-->
+<!--  </iframe>-->
 
 </template>
 
