@@ -69,16 +69,16 @@ export default function () {
 
     //表格样式
     const tableView: Array<ITableView<SysUser>> = [
-        {title: "用户名", prop: "userName", type: "text", width: 150},
-        {title: "真实姓名", prop: "realName", type: "text", width: 150},
-        {title: "电话", prop: "phone", type: "text", width: 150},
-        {title: "邮箱", prop: "email", type: "text", width: 150, overflow: true},
-        {title: "电话", prop: "phone", type: "text", width: 150},
-        {title: "角色", prop: "roles", type: "tag", tagType: "success", width: 200},
-        {title: "状态", prop: "status", type: "slot", slotName: "status", width: 100},
-        {title: "备注", prop: "remark", type: "text", width: 300, overflow: true},
-        {title: "创建日期", prop: "createTime", type: "text", width: 170},
-        {title: "修改日期", prop: "updateTime", type: "text", width: 170},
+        {title: "用户名", prop: "userName", type: "text"},
+        {title: "真实姓名", prop: "realName", type: "text"},
+        {title: "电话", prop: "phone", type: "text"},
+        {title: "邮箱", prop: "email", type: "text", overflow: true},
+        {title: "电话", prop: "phone", type: "text"},
+        {title: "角色", prop: "roles", type: "tag", tagType: "success"},
+        {title: "状态", prop: "status", type: "slot", slotName: "status"},
+        {title: "备注", prop: "remark", type: "text", overflow: true},
+        {title: "创建日期", prop: "createTime", type: "text"},
+        {title: "修改日期", prop: "updateTime", type: "text"},
         {title: "操作", type: "operation", fixed:"right", width: 220},
     ]
 

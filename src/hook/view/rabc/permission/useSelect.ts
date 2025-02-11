@@ -40,27 +40,25 @@ export default function () {
     //资源表格结构
     const tableView: Array<ITableView<SysPermission>> = [
         {title: "展开", type: "text", width: 90},
-        {title: "序号", prop: "sort", type: "text", width: 90},
-        {title: "资源名称", prop: "name", type: "text", width: 150},
-        {title: "资源编码", prop: "code", type: "text", width: 150},
-        {title: "资源图标", prop: "icon", type: "slot", slotName: "icon", width: 150},
+        {title: "序号", prop: "sort", type: "text"},
+        {title: "资源名称", prop: "name", type: "text"},
+        {title: "资源编码", prop: "code", type: "text"},
+        {title: "资源图标", prop: "icon", type: "slot", slotName: "icon"},
         {
             title: "资源类型",
             prop: "type",
             type: "tag",
-            options: {0: "按钮", 1: "菜单"},
-            width: 150
+            options: {0: "按钮", 1: "菜单"}
         },
-        {title: "路由地址", prop: "routerPath", type: "text", width: 150},
-        {title: "组件地址", prop: "routerComponent", type: "text", overflow: true, width: 150},
+        {title: "路由地址", prop: "routerPath", type: "text"},
+        {title: "组件地址", prop: "routerComponent", type: "text", overflow: true},
         {
             title: "显示与否",
             prop: "visible",
             type: "tag",
-            options: {true: "显示", false: "隐藏"},
-            width: 150
+            options: {true: "显示", false: "隐藏"}
         },
-        {title: "备注", prop: "remark", type: "text", overflow: true, width: 250},
+        {title: "备注", prop: "remark", type: "text", overflow: true},
         {title: "操作", type: "operation", fixed: "right", width: 220}
     ]
 
